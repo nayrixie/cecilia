@@ -1,0 +1,29 @@
+  <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mapa de Exportações Campo-Indústria</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    </head>
+    <body>
+
+        <h1>Mapa Interativo: Da Fazenda à Indústria</h1>
+        <div class="info-box">
+            <p>Este mapa exemplifica a localização de *fazendas* (produtoras) e *fábricas* (receptoras/processadoras) para facilitar a logística e o comércio. Os pontos são fictícios, mas situados na região central do Paraná.</p>
+            <p><strong>Legenda:</strong></p>
+            <div class="legend-item">
+                <span class="custom-div-icon" style="background-color: #4CAF50; width: 24px; height: 24px; border-radius: 50%; border: 2px solid #333; margin-right: 10px;"></span> Fazendas (Produtores)
+            </div>
+            <div class="legend-item">
+                <span class="custom-div-icon" style="background-color: #FFC107; width: 24px; height: 24px; border-radius: 50%; border: 2px solid #333; margin-right: 10px;"></span> Fábricas (Recebem Exportações)
+            </div>
+        </div>
+
+        <div id="map"></div>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
